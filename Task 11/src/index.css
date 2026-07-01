@@ -1,4 +1,4 @@
-
+@import "tailwindcss";
 :root {
   --text: #6b6375;
   --text-h: #08060d;
@@ -50,13 +50,20 @@
     filter: invert(1) brightness(2);
   }
 }
-
-body {
-  margin: 0;
+*{
+  /* padding: 0; */
+  /* margin: 0; */
+  box-sizing: border-box;
+}
+#root 
+{
+  width: 100%;
+  /* margin: 0; */
+  /* padding: 0; */
 }
 
 #root {
-  width: 1126px;
+  /* width: 1126px; */
   max-width: 100%;
   margin: 0 auto;
   text-align: center;
@@ -109,4 +116,10 @@ code {
   line-height: 135%;
   padding: 4px 8px;
   background: var(--code-bg);
+}
+svg{
+  width: 30px;
+  height: 30px;
+  display: flex;
+  fill: rgb(255, 255, 255);
 }
